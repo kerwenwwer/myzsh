@@ -7,10 +7,6 @@ if [ -f $HOME/.zshrc ]; then
   mv $HOME/.zshrc $HOME/.zshrc.$(date "+%Y.%m.%d-%H:%M:%S")
 fi
 
-if [ -f /tmp/myzsh ]; then
-  rm -rf /tmp/myzsh
-fi
-
 rm -rf ~/.myzsh
 rm -rf ~/.zim
 
@@ -18,8 +14,9 @@ rm -rf ~/.zim
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 
 # clone from github
-git clone https://github.com/kerwenwwer/myzsh.git /tmp/myzsh
-cd /tmp/myzsh
+git clone https://github.com/kerwenwwer/myzsh.git ~/.myzsh
+
+cd ~/.myzsh
 
 # Backup original script
 if [ -f $HOME/.zshrc ]; then
