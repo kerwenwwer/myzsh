@@ -45,5 +45,5 @@ zsh $HOME/.zim/zimfw.zsh install
 
 # install auto switch pipenv
 git clone https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv.git $HOME/.zim/zsh-autoswitch-virtualenv
-ch $HOME
+cd $HOME
 exec zsh
