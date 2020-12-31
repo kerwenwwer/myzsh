@@ -166,3 +166,5 @@ d () {
     fi
   fi
 }
+
+source $HOME/.zim/modules/zsh-autoswitch-virtualenv/autoswitch_virtualenv.plugin.zsh

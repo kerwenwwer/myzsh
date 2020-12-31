@@ -42,4 +42,7 @@ touch $HOME/.zsh_profile
 # install powerlevel10k
 zsh $HOME/.zim/zimfw.zsh install
 
+# install auto switch pipenv
+cd $HOME/.zim/module && git clone https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv.git
+
 exec zsh
