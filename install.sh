@@ -14,8 +14,8 @@ rm -rf ~/.zim
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 
 # clone from github
-git clone https://github.com/res876ttb/myzsh.git ~/.myzsh
-cd ~/.myzsh
+git clone https://github.com/kerwenwwer/myzsh.git /tmp/myzsh
+cd /tmp/myzsh
 
 # Backup original script
 if [ -f $HOME/.zshrc ]; then
@@ -43,6 +43,6 @@ touch $HOME/.zsh_profile
 zsh $HOME/.zim/zimfw.zsh install
 
 # install auto switch pipenv
-cd $HOME/.zim/module && git clone https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv.git
-
+git clone https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv.git $HOME/.zim/zsh-autoswitch-virtualenv
+ch $HOME
 exec zsh
