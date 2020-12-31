@@ -7,6 +7,10 @@ if [ -f $HOME/.zshrc ]; then
   mv $HOME/.zshrc $HOME/.zshrc.$(date "+%Y.%m.%d-%H:%M:%S")
 fi
 
+if [ -f /tmp/myzsh ]; then
+  rm -rf /tmp/myzsh
+fi
+
 rm -rf ~/.myzsh
 rm -rf ~/.zim
 
